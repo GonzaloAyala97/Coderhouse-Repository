@@ -91,7 +91,7 @@ body{
     overflow: hidden;
     transition: 2s ease-in;
 }
-.ofertas div hover{
+.ofertas div:hover{
     transform: scale(1.1);
 }
 .ofertas h2{
