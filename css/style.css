@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------------HEADER--------------*/
+header{
+    background-color: rgb(224, 206, 206);
+    background-image: url(../img/fondo3.png);
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'The Nautigal', cursive;
+    z-index: 10;
+}
+header h1{
+    list-style-type: none;
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    margin: 0 10px 0 0;
+    padding-bottom: 10px;
+    color: rgb(15, 192, 38);   
+}
+header p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    margin: 0 10px 0 0;
+    padding-bottom: 10px;
+    color: rgb(15, 192, 38);
+}
+header nav ul{
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    text-align: right;
+    margin: 0 10px 0 0;
+    padding-bottom: 10px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(15, 192, 38);
+}
+
+body{
+    background-color: black;
+}
+/*-------------index----------*/
+.title_1{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38); 
+}
+.destacados__1{
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pcfondo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.destacados__1 img{
+ height: 200px;
+ width: 250px;
+}
+.ofertas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.ofertas div{
+    width: 250px;
+    height: 315px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    transition: 2s ease-in;
+}
+.ofertas div hover{
+    transform: scale(1.1);
+}
+.ofertas h2{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.ofertas div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.ofertas div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+/*-----------section 2 del index------------*/
+.destacados__2{
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/consolafondo.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;  
+}
+.destacados__2 h3{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px 0 0;
+    color: rgb(15, 192, 38);
+}
+.destacados__2 img{
+    height: 200px;
+    width: 250px;
+}
+
+.ofertas__2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.ofertas__2 h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+
+.ofertas__2 div{
+    width: 250px;
+    height: 313px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+}
+.ofertas__2 div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.ofertas__2 div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+/*-----------------section 3 del index----------------*/
+.destacados__3{
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/arcade2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.destacados__3 img{
+    height: 200px;
+    width: 250px;
+}
+.destacados__3 h3{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px 0 0;
+    color: rgb(15, 192, 38);
+}
+.ofertas__3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.ofertas__3 h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.ofertas__3 div{
+    width: 250px;
+    height: 313px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+}
+.ofertas__3 div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.ofertas__3 div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+} 
+/*-----------------footer------------------*/
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px 0 0;
+    padding-bottom: 10px;
+    color: rgb(15, 192, 38);
+}
+footer img{
+    height: 50px;
+    width: 50px;
+}
+.redes_1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    margin-top: 5px;
+} /*no pude dimensionar el iframe del google maps, cada vez que lo intenté me desconfiguraba la pag, se rompia todo*/
+iframe{
+    width: 300px;
+    height: 300px;
+    /*Sólo para que se vea, ya que la dirección al parecer está mal*/
+    border: 5px solid green;
+  }
+/*-------------CONSOLAS----------*/
+  
+.back{
+    background-color: rgb(0, 0, 0);
+}
+.sony{
+    background-color: rgb(0, 0, 0);
+    height: 800px;
+    width: 100%;
+    background-image: url(../img/consolafondo2.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.sony img{
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+}
+.sony h2{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+.consolas{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.consolas div{
+    width: 250px;
+    height: 315px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.consolas div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.consolas div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+.consolas h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+
+/*al tener varios flexbox, tuve que dimensionar este para que el resto entre en la section*/
+
+/*----------------segundo flexbox, mostrando los juegos que estarían a la venta*----------*/
+
+.juegosps{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.juegosps div{
+    width: 250px;
+    height: 315px;
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.juegosps p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.juegosps a{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.juegosps img{
+    height: 250px;
+    width: 250px;
+}
+/*--------------segunda section, mostrando otra marca y juegos de la misma----------------*/
+.xbox{
+    background-color: aqua;
+    height: 800px;
+    width: 100%;
+    background-image: url(../img/fondoxbox2.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.xbox h2{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+.xbox img{
+    height: 200px;
+    width: 250px;
+}
+.consolas-2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+.consolas-2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.consolas-2 h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.consolas-2 div{
+    width: 250px;
+    height: 315px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.consolas-2 div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.consolas-2 div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+/*segundo flexbox de la misma section, mostrando juegos*/
+.juegos-2 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    }
+.juegos-2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.juegos-2 p{
+    font-size: 20px;
+    color: rgb(221, 97, 97);
+    
+}
+.juegos-2 a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(255, 76, 31);
+    padding: 10px 5px 5px 5px;
+}
+/*-------PC--------*/
+.hero2{
+    background-color: black;
+}
+.pc{
+    background-color: rgb(0, 0, 0);
+    height: 800px;
+    width: 100%;
+    background-image: url(../img/pcfondo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.pc h2{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+.pc img{
+    height: 200px;
+    width: 250px;
+}
+.ofertas-pc{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.ofertas-pc div{
+    width: 250px;
+    height: 310px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.ofertas-pc h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.ofertas-pc  a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;  
+}
+.ofertas-pc p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.ofertas-pc-2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 15px; 
+    flex-wrap: wrap;
+}
+.ofertas-pc-2 div{
+    width: 250px;
+    height: 310px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.ofertas-pc-2 h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.ofertas-pc-2 p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+
+.ofertas-pc-2 a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+/*segunda section de la pag PC, mostrando otro tipo de productos*/
+.notebook{
+    background-color: rgb(0, 0, 0);
+    height: 900px;
+    width: 100%;
+    background-image: url(../img/note4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.notebook h2{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+
+.notebook-2 {
+    height: fit-content;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.notebook-2 div{
+    width: 250px;
+    height: 310px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.notebook-2 div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.notebook-2 div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+.notebook-2 h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.notebook-2 img{
+    height: 200px;
+    width: 250px;
+}
+/*----------retro-------------*/
+.retro{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/retrofondo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.retro h3{
+    background-color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+.consolas-retro{    
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 15px; 
+    flex-wrap: wrap;
+}
+.consolas-retro div{
+    width: 250px;
+    height: 330px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #f0f3f5bd;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.consolas-retro h3{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+}
+.consolas-retro div a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+    color: rgb(3, 3, 3);
+    padding: 5px 5px 5px 5px;
+    align-items: baseline;
+    border: 1px solid black;
+}
+.consolas-retro div p{
+    margin-bottom: 10px;
+    padding: 3px 3px 3px 3px;
+    background-color: black;
+    color: rgb(15, 192, 38);
+    font-weight: 700;
+}
+.consolas-retro img{
+    height: 200px;
+    width: 250px;
+}
+/*-------------hardware-----------*/
+/*dentro de la page HARDWARE, se incluirá un mini-trabajito con grids, mostrando productos de una forma algo disitnta, a modo de práctica y para practicar como adaptar un GRID a responsive, ya que dudo que la función GRID sea incluida en la fase final del layout*/
+.hardware{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(43, 86, 94, 0.356), rgba(65, 51, 51, 0.459)), url(../img/hardwarefondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hardware h2{
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    font-size: 20px;
+    color: rgb(221, 97, 97);
+    width: 100%;
+}
+.cards-hardware{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+.cards-hardware div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(33, 212, 108);
+}
+.hardware-grid{
+    position: relative;
+}
+.hardware-grid h3{
+    position: absolute;
+    text-align: center;
+    color: rgb(33, 212, 108);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+.chosen{
+    grid-column: span 2;
+}
+.chosen img{
+    object-fit: cover;
+}
+@media (max-width: 905px) {
+    /*empieza el responsive de la pag index: */
+    /*los iconos fixed de las redes pasan al footer para no "meterse" dentro de las cards*/
+    .redes_1 { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: block;
+    position: static;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 5px;
+    }
+@media (max-width:751px) {
+    /*se cambian las dimensiones del título y del menu dentro del header c:*/
+    header h1{
+        font-size: 30px;
+        text-align: center;
+        margin: 0 10px 0 0;
+        padding-bottom: 10px; 
+    }
+    header p{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px 0 0;
+        padding-bottom: 10px;
+    }
+    header nav ul{
+        font-size: 20px;
+        text-align: center;
+        margin: 0 10px 0 0;
+        padding-bottom: 10px;
+    }
+    header nav ul li{
+        display: inline-block;
+        margin: 10px;
+    }
+    .title_1{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    /*entrando a las cards de productos, se intenta mostrar todo del mismo modo solo que con un poquito menos de resolución*/
+    /*se achican un poco las cards de productos para una pantalla de menor resolución c: */
+    .ofertas div{
+        width: 200px;
+        height: 270px;
+        margin-bottom: 10px;
+    }
+    .ofertas h2{
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+    .ofertas div p{
+        margin-bottom: 10px;
+        padding: 3px 3px 3px 3px;
+        font-weight: 700;
+    }
+    .ofertas div a{
+        font-size: 12px;
+        font-weight: 900;
+    }
+    .destacados__1 img{
+        height: 150px;
+        width: 200px;
+       }
+    .destacados__2 h3{
+        text-align: center;
+        font-size: 20px;
+    }
+    /*entrando en la segunda section, se aplican los mismos cambios para el primer nivel de responsive*/
+    .destacados__2 img{
+        height: 150px;
+        width: 200px;
+    }
+    .ofertas__2 h3{
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+    .ofertas__2 div{
+        width: 200px;
+        height: 255px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .ofertas__2 div p{
+        margin-bottom: 10px;
+        padding: 3px 3px 3px 3px;
+        font-weight: 700;
+    }
+    .ofertas__2 div a{
+        font-size: 12px;
+        font-weight: 900;
+        padding: 5px 5px 5px 5px;
+        align-items: baseline;
+    }
+    /*ya casi terminando con las sections, se mantienen las mismas dimensiones para las cards ya ajustadas arriba*/
+    .destacados__3 h3{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px 0 0;
+    }
+    .destacados__3 img{
+        height: 150px;
+        width: 200px;
+    }
+    .ofertas__3 h3{
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+    .ofertas__3 div{
+        width: 200px;
+        height: 255px;
+    }
+    .ofertas__3 div p{
+        margin-bottom: 10px;
+        padding: 3px 3px 3px 3px;
+        font-weight: 700;
+    }
+    .ofertas__3 div a{
+        font-size: 12px;
+        font-weight: 900;
+        padding: 5px 5px 5px 5px;
+        align-items: baseline;
+    } 
+} /*primera media querie terminada, los items y la pag se adaptan a una menor resolución pero aún con el mismo display*/
+}
+/*segunda parte del responsive, pensado como para dimensiones de una pantalla tablet*/
+/*acá los items ya se empiezan a desplegar de forma diferente, como anteriormente se usó flex-wrap, las cards se adaptan de manera hermosa*/
+@media (max-width:599px) {
+    .destacados__1{
+    height: 800px;
+    }
+    /*se agranda un poco la altura de la primer section para que no se buguee con el poco espacio y las cards queden mezcladas con la section que le sigue*/
+}
+@media (max-width:399px){
+    .destacados__1{
+        height: 1000px;
+        }
+    .destacados__2{
+        height: 1000px;
+    }
+    .destacados__3{
+        height: 1000px;
+    }
+/*responsive del index terminado, las dimensiones del header y del footer se van a adaptar del mismo modo al resto de las pags*/
+}
+@media (max-width:749px){
+    /*haciendo el responsive de la page PC, dimensionando a nuevos tamaños las sections para que alcancen a encerrar a sus correspondientes productos: */
+    .pc{
+        height: 1100px;
+    }
+}
+@media(max-width: 499px){
+    .pc{
+        height: 1800px;
+    }
+    /*el background de la page Retro coincidió con esta medida así que para ahorrar código lo ubiqué dentro de la media de la page PC*/
+    /*en la page RETRO voy a ir añadiendo mas cards de productos junto con un layout distinto, aún no lo agregué pero para la futura entrega ya se verá diferente*/
+    .retro{
+        height: 1100px;
+    }
+}
+/*el responsive de la page CONSOLAS a continuación, si bien las medidas del @media son mayores, para orientarme mejor me resultó más cómodo trabajarlos en orden de pages en lugar de ordenar de acuerdo al tamaño del responsive*/
+@media(max-width: 999px){
+    .sony{
+        height: 1100px;
+    }
+    .xbox{
+        height: 1000px;
+        width: 100%;
+    }
+}
+@media(max-width: 749px){
+    .sony{
+        height: 1400px;
+    }
+    .xbox{
+        height: 1400px;
+    }
+}
+@media(max-width: 499px){
+    .sony{
+        height: 2350px;
+    }
+    .xbox{
+        height: 1900px;
+    }
+}
+/*responsive de la última page, HARDWARE*/
+/*para practicar, sumé una grilla de productos con GRID, la fase final del proyecto no creo que lo lleve realmente*/
+@media(max-width:650px){
+.chosen{
+    grid-column: span 1;
+}
+.chosen img{
+    object-fit: scale-down;
+}
+}
+@media(max-width:485px){
+    .cards-hardware{
+        grid-template-columns: 1fr;
+    }
+    
+}
