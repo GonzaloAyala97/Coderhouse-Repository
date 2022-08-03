@@ -3,18 +3,13 @@
 *{
     margin: 0%;
     padding: 0;
-    box-sizing: border-box;
 }
 /*--------------ACTUALIZACIONES----------*/
-/* -se añadieron animaciones de scale a las cards
-   -se añadieron animaciones de bounce-in al header
-   -se añadieron animaciones de fade in-up big a las imágenes de redes del footer
-   -se cambió el font style del header, y los titulos de las section
-   -se creó la branch "animate" en git para realizar todos estos cambios y posteriormente mergear a la branch master
+/* -se añadió un carousel, el mismo te lleva a distintas pages clickeando en las imágenes
+    -se modificaron un poco las cards para renovar y modernizar un poco el estilo
+    -se añadió un form a la page Retro sacado del mismo bootstrap
 
-   ---------cambios próximos: -se añadirán mas productos junto con un carousel de algunos productos que estarían de "oferta"
-                              -se intentará acoplar algun tipo de form a la parte de contactos del footer
-                              -mejoras de estilo en Gral.*/
+   ---------cambios próximos: -mejoras en el resto de las pages más allá del index con mas productos y sumando grids
 
 /*----------------HEADER--------------*/
 header{
@@ -67,6 +62,17 @@ body{
     background-color: black;
 }
 /*-------------index----------*/
+/*detalles del carousel, no sé por qué pero a la class le puse minion :D*/
+.minion img{
+    height: 300px;
+    object-fit: cover;
+}
+.minion h5{
+    color: rgb(4, 255, 242);
+}
+.minion p{
+    color: rgb(4, 255, 242);
+}
 .title_1{
     text-align: center;
     font-size: 18px;
@@ -95,13 +101,14 @@ body{
 }
 .ofertas div{
     width: 250px;
-    height: 315px;
+    height: 330px;
     margin-bottom: 10px;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid rgb(24, 206, 197);
     background-color: #f0f3f5bd;
     overflow: hidden;
-    transition: 2s ease-in;
+    transition: 1.5s;
 }
 .ofertas div:hover{
     transform: scale(1.1);
@@ -117,7 +124,7 @@ body{
     margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
     background-color: black;
-    color: rgb(15, 192, 38);
+    color: rgb(16, 199, 190);
     font-weight: 700;
 }
 .ofertas div a{
@@ -172,13 +179,14 @@ body{
 
 .ofertas__2 div{
     width: 250px;
-    height: 313px;
+    height: 330px;
     margin-bottom: 10px;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid rgb(24, 206, 197);
     background-color: #f0f3f5bd;
     overflow: hidden;
-    transition: 2s;
+    transition: 1.5s;
 }
 .ofertas__2 div:hover{
     transform: scale(1.1);
@@ -187,7 +195,7 @@ body{
     margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
     background-color: black;
-    color: rgb(15, 192, 38);
+    color: rgb(16, 199, 190);
     font-weight: 700;
 }
 .ofertas__2 div a{
@@ -242,10 +250,11 @@ body{
 }
 .ofertas__3 div{
     width: 250px;
-    height: 313px;
+    height: 330px;
     margin-bottom: 10px;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid rgb(24, 206, 197);
     background-color: #f0f3f5bd;
     overflow: hidden;
     transition: 2s;
@@ -257,7 +266,7 @@ body{
     margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
     background-color: black;
-    color: rgb(15, 192, 38);
+    color: rgb(16, 199, 190);
     font-weight: 700;
 }
 .ofertas__3 div a{
@@ -283,7 +292,8 @@ footer img{
     height: 50px;
     width: 50px;
 }
-.redes_1{
+
+.redes{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -291,11 +301,10 @@ footer img{
     bottom: 40px;
     right: 20px;
     margin-top: 5px;
-} /*no pude dimensionar el iframe del google maps, cada vez que lo intenté me desconfiguraba la pag, se rompia todo*/
+}
 iframe{
     width: 300px;
     height: 300px;
-    /*Sólo para que se vea, ya que la dirección al parecer está mal*/
     border: 5px solid green;
   }
 /*-------------CONSOLAS----------*/
@@ -680,7 +689,7 @@ iframe{
     background-position: center;
     background-size: cover;
 }
-.retro h3{
+.retro h4{
     background-color: black;
     text-align: center;
     font-size: 30px;
@@ -700,6 +709,7 @@ iframe{
     width: 250px;
     height: 330px;
     margin-bottom: 10px;
+    border: 1px solid rgb(24, 206, 197);
     text-align: center;
     background-color: #f0f3f5bd;
     overflow: hidden;
@@ -711,6 +721,25 @@ iframe{
     font-size: 20px;
     color: rgb(255, 253, 253);
     width: 100%;
+}
+/*se añade un form sacado de bootstrap y por acá se modifica un poco para que se acople a la page sin desencajar con sus colores por defecto*/
+.form{
+    width: 500px;
+}
+.form h3{
+    color: rgb(24, 206, 197);
+}
+.mb-3{
+    background-color: rgb(7, 7, 7);
+}
+.form-label{
+    color: rgb(24, 206, 197);
+}
+.form-text{
+    color: rgb(24, 206, 197);
+}
+.form-check-label{
+    color: rgb(24, 206, 197);
 }
 .consolas-retro div a{
     text-decoration: none;
@@ -725,7 +754,7 @@ iframe{
     margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
     background-color: black;
-    color: rgb(15, 192, 38);
+    color: rgb(16, 199, 190);
     font-weight: 700;
 }
 .consolas-retro img{
@@ -784,7 +813,7 @@ iframe{
 @media (max-width: 905px) {
     /*empieza el responsive de la pag index: */
     /*los iconos fixed de las redes pasan al footer para no "meterse" dentro de las cards*/
-    .redes_1 { 
+    .redes { 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -827,7 +856,7 @@ iframe{
     /*se achican un poco las cards de productos para una pantalla de menor resolución c: */
     .ofertas div{
         width: 200px;
-        height: 270px;
+        height: 100%;
         margin-bottom: 10px;
     }
     .ofertas h2{
@@ -846,7 +875,7 @@ iframe{
     }
     .destacados__1 img{
         height: 150px;
-        width: 200px;
+        width: 100%;
        }
     .destacados__2 h3{
         text-align: center;
@@ -855,7 +884,7 @@ iframe{
     /*entrando en la segunda section, se aplican los mismos cambios para el primer nivel de responsive*/
     .destacados__2 img{
         height: 150px;
-        width: 200px;
+        width: 100%;
     }
     .ofertas__2 h3{
         text-align: center;
@@ -864,7 +893,7 @@ iframe{
     }
     .ofertas__2 div{
         width: 200px;
-        height: 255px;
+        height:100%;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -887,7 +916,7 @@ iframe{
     }
     .destacados__3 img{
         height: 150px;
-        width: 200px;
+        width: 100%;
     }
     .ofertas__3 h3{
         text-align: center;
@@ -896,7 +925,7 @@ iframe{
     }
     .ofertas__3 div{
         width: 200px;
-        height: 255px;
+        height: 100%;
     }
     .ofertas__3 div p{
         margin-bottom: 10px;

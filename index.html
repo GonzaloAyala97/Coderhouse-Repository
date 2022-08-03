@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <main>
         <header class="title">
-                <h1 class="animate__animated animate__bounceInLeft">GAMING SPOT</h1>
-                <p class="animate__animated animate__bounceInLeft">Tu lugar para el gaming</p>
-                    <img src="" alt="">
-                    <nav class="animate__animated animate__fadeInRight"> 
-                        <ul class=>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./pages/pc.html">PC</a></li>
-                            <li><a href="./pages/consola.html">CONSOLAS</a></li>
-                            <li><a href="./pages/retro.html">RETRO</a></li>
-                            <li><a href="./pages/hardware.html">HARDWARE</a></li>
-                        </ul>
-                    </nav>
+            <h1 class="animate__animated animate__bounceInLeft">GAMING SPOT</h1>
+            <p class="animate__animated animate__bounceInLeft">Tu lugar para el gaming</p>
+            <img src="" alt="">
+            <nav class="animate__animated animate__fadeInRight">
+                <ul class=>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/pc.html">PC</a></li>
+                    <li><a href="./pages/consola.html">CONSOLAS</a></li>
+                    <li><a href="./pages/retro.html">RETRO</a></li>
+                    <li><a href="./pages/hardware.html">HARDWARE</a></li>
+                </ul>
+            </nav>
         </header>
-        <section>
+        <section class="minion">
+            <!--se añade un carousel, cada imagen del mismo te lleva a una page diferente, en relación a su img-->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/3060.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                    <div class="carousel-item active">
+                        <a href="./pages/pc.html"><img src="./img/banner1.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>PC GAMING</h5>
+                            <p>Enterate de nuestras mejores ofertas sobre PC GAMING</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/3080.jpg" class="d-block w-100" alt="">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-item">
+                        <a href="./pages/consola.html"><img src="./img/banner2.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>CONSOLAS</h5>
+                            <p>Conseguí esa consola que andas buscando, acá!</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/i7.jpg" class="d-block w-100" alt="">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                    <div class="carousel-item">
+                        <a href="./pages/retro.html"><img src="./img/banner3.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>RETRO GAMING</h5>
+                            <p>¿Nostalgia? por acá vas a conseguir lo tuyo!</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </section>
         <section class="destacados__1">
             <h2 class="title_1">PC GAMING</h2>
             <div class="ofertas">
                 <div>
                     <h2>PC DE ESCRITORIO</h2>
-                        <img src="./img/PC1.jpg" alt="">
-                        <p>Ryzen 7 3200ghz GPU integrada 8gbRAM 500gb hard disk $145000</p>
-                           <a href="./pages/pc.html">COMPRAR</a>
+                    <img src="./img/PC1.jpg" alt="">
+                    <p>Ryzen 7 3200ghz GPU integrada 8gbRAM 500gb HDD $145000</p>
+                    <a href="./pages/pc.html">COMPRAR</a>
                 </div>
                 <div>
                     <h2>SET GAMER</h3>
                         <img src="./img/PC2.jpg" alt="">
                         <p>Intel i3 16gbRAM DDR4 GTX 2060 1TB hard disk $180000</p>
-                           <a href="./pages/pc.html">COMPRAR</a>
+                        <a href="./pages/pc.html">COMPRAR</a>
 
                 </div>
                 <div>
                     <h2>SET PREMIUM</h2>
-                        <img src="./img/PC3.jpg" alt="">
-                        <p>i7 3600ghz RTX 3060 16GB RAM 1TB Hard Dysk $210000</p>
-                           <a href="./pages/pc.html">COMPRAR</a>
+                    <img src="./img/PC3.jpg" alt="">
+                    <p>i7 3600ghz RTX 3060 16GB RAM 1TB Hard Dysk $210000</p>
+                    <a href="./pages/pc.html">COMPRAR</a>
                 </div>
             </div>
         </section>
@@ -94,15 +103,15 @@
             <div class="ofertas__2">
                 <div>
                     <h3>PLAYSTATION 4 SLIM</h3>
-                        <img src="./img/ps4.jpg" alt="">
-                        <p>500GB Slim, con joystick incluido $70000</p>
-                           <a href="./pages/consola.html">COMPRAR</a>
+                    <img src="./img/ps4.jpg" alt="">
+                    <p>500GB Slim, con joystick incluido $70000</p>
+                    <a href="./pages/consola.html">COMPRAR</a>
                 </div>
                 <div>
                     <h3>XBOX ONE</h3>
-                        <img src="./img/xbox1.jpg" alt="">
-                        <p>500GB Slim, con joystick incluido $120000</p>
-                           <a href="./pages/consola.html">COMPRAR</a>
+                    <img src="./img/xbox1.jpg" alt="">
+                    <p>500GB Slim, con joystick incluido $120000</p>
+                    <a href="./pages/consola.html">COMPRAR</a>
                 </div>
             </div>
 
@@ -112,36 +121,40 @@
             <div class="ofertas__3">
                 <div>
                     <h3>SEGA</h3>
-                        <img src="./img/sega.jpg" alt="">
-                        <p>100 juegos incluidos + joystick a $7000</p>
-                           <a href="./pages/retro.html">COMPRAR</a>
+                    <img src="./img/sega.jpg" alt="">
+                    <p>100 juegos incluidos + joystick a $7000</p>
+                    <a href="./pages/retro.html">COMPRAR</a>
                 </div>
                 <div>
                     <h3>FAMILY</h3>
                     <img src="./img/family.jpg" alt="">
                     <p>100 juegos incluidos + joystick a $7000</p>
-                       <a href="./pages/retro.html">COMPRAR</a>
+                    <a href="./pages/retro.html">COMPRAR</a>
                 </div>
             </div>
-         
+
         </section>
     </main>
     <footer>
         <h4>Encontranos también en redes:</h4>
-            <div class="redes_1">
-                <div class="animate__animated animate__fadeInUpBig">
-                    <a href="https://www.facebook.com"><img src="./img/facebook.png" alt="facebook"target="_blank"></a>
-                    <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="instagram"target="_blank"></a>
-                    <a href="https://www.whatsapp.com/?lang=es"><img src="./img/whatsapp.png" alt="whatsapp"></a>
-                </div>
+            <div class="animate__animated animate__fadeInUpBig redes">
+                <a href="https://www.facebook.com"><img src="./img/facebook.png" alt="facebook" target="_blank"></a>
+                <a href="https://www.instagram.com"><img src="./img/instagram.png" alt="instagram" target="_blank"></a>
+                <a href="https://www.whatsapp.com/?lang=es"><img src="./img/whatsapp.png" alt="whatsapp"></a>
             </div>
-                   <p>¡En Gaming Spot batimos records de precios y también en calidad de nuestros productos! no dudes en seguirnos en redes para mantenerte al tanto </p>
-                   <p>nuestro local:</p>
-                   <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.930154458129!2d-73.98228730246558!3d40.763560913409286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c90ddb8f5303e73!2zNDDCsDQ1JzQ4LjgiTiA3M8KwNTgnNDAuMSJX!5e0!3m2!1ses-419!2sar!4v1657764235100!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   </div>
-                </div>     
+        <p>¡En Gaming Spot batimos records de precios y también en calidad de nuestros productos! no dudes en seguirnos
+            en redes para mantenerte al tanto </p>
+        <p>nuestro local:</p>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.930154458129!2d-73.98228730246558!3d40.763560913409286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5c90ddb8f5303e73!2zNDDCsDQ1JzQ4LjgiTiA3M8KwNTgnNDAuMSJX!5e0!3m2!1ses-419!2sar!4v1657764235100!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
