@@ -1019,7 +1019,7 @@ iframe{
         gap: 10px;
     }
 }
-@media (max-width:399px){
+@media (max-width:399px){g
     .destacados__1{
         height: 1000px;
         }
