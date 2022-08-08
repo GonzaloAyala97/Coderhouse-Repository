@@ -5,11 +5,9 @@
     padding: 0;
 }
 /*--------------ACTUALIZACIONES----------*/
-/* -se añadió un carousel, el mismo te lleva a distintas pages clickeando en las imágenes
-    -se modificaron un poco las cards para renovar y modernizar un poco el estilo
-    -se añadió un form a la page Retro sacado del mismo bootstrap
+/* Todas las pages cuentan con animaciones responsive y con más productos, adaptando mejor el espacio usando medidas absolutas y ahorrando código reutilizando la class "ofertas" para algunos productos, siguiendo así también con el mismo estilo en todas las pages
 
-   ---------cambios próximos: -mejoras en el resto de las pages más allá del index con mas productos y sumando grids
+   ---------cambios próximos: Aprovechar las propiedades de bootstrap para ir sumando cosas
 
 /*----------------HEADER--------------*/
 header{
@@ -96,10 +94,9 @@ body{
 }
 .destacados__1 p{
     position: static;
-    bottom: 0%;
+    color: rgb(16, 199, 190);
 }
 .ofertas{
-    height: 330px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -108,7 +105,8 @@ body{
 }
 .ofertas div{
     width: 250px;
-    height: 330px;
+    height: 100%;
+    margin-top: 25px;
     margin-bottom: 10px;
     text-align: center;
     border-radius: 10px;
@@ -149,8 +147,36 @@ body{
     color: rgb(247, 239, 239);
     border: 1px solid rgb(255, 255, 255);
 }
-
-/*-----------section 2 del index------------*/
+/*para optimizar código, y por el hecho de que las cards de productos van a mantener su estilo, usé la misma a lo largo de las pages*/
+/*section 2 del index mostrando productos relacionados a consolas*/
+.destacados__2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoplay.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.destacados__2 h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: rgb(15, 192, 38); 
+    background-color: black;
+}
+.destacados__2 img{
+    height: 200px;
+    width: 100%;
+}
+.destacados__2 p{
+    padding: 3px 3px 3px 3px;
+    color: rgb(16, 199, 190);
+    font-weight: 700;
+    bottom: 0;
+    position: static;
+}
+/*-----------section 3 del index------------*/ /*mostrando una grilla de juegos*/
 .games{
     height: 100%;
     width: 100%;
@@ -164,11 +190,19 @@ body{
     position: static;
     bottom: 0%;
 }
+.games h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: rgb(15, 192, 38); 
+}
 .games img{
     width: 100%;
     height: 290px;
     border-radius: 10px;
     transition: 1.5s;
+    border: 1px solid  rgb(235, 94, 12); ;
 }
 .games img:hover{
     transform: scale(0.9);
@@ -181,78 +215,6 @@ body{
     gap: 10px;
 }
 
-
-
-.destacados__2{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondoplay.jpg);
-    background-position: center;
-    background-size: cover;
-    margin-top: 20px;  
-}
-.destacados__2 h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    width: 100%;
-}
-.destacados__2 img{
-    height: 200px;
-    width: 250px;
-}
-.tituloconsola{
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 20px;
-    color: rgb(15, 192, 38); 
-}
-.ofertas__2{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    flex-wrap: wrap;
-}
-.ofertas__2 h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
-}
-
-.ofertas__2 div{
-    width: 250px;
-    height: 330px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgb(24, 206, 197);
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    transition: 1.5s;
-}
-.ofertas__2 div:hover{
-    transform: scale(1.1);
-}
-.ofertas__2 div p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
-    background-color: black;
-    color: rgb(16, 199, 190);
-    font-weight: 700;
-}
-.ofertas__2 div a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
-}
 /*-----------------section 3 del index----------------*/
 .juegos{
     width: 100%;
@@ -261,14 +223,14 @@ body{
 .destacados__3{
     background-color: black;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/arcade2.jpg);
     background-position: center;
     background-size: cover;
 }
 .destacados__3 img{
     height: 200px;
-    width: 250px;
+    width: 100%;
 }
 .destacados__3 h3{
     text-align: center;
@@ -285,49 +247,13 @@ body{
     color: rgb(15, 192, 38); 
     background-color: black;
 }
-.ofertas__3{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-    flex-wrap: wrap;
-}
-.ofertas__3 h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
-}
-.ofertas__3 div{
-    width: 250px;
-    height: 330px;
-    margin-bottom: 10px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgb(24, 206, 197);
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    transition: 2s;
-}
-.ofertas__3 div:hover{
-    transform: scale(1.1);
-}
-.ofertas__3 div p{
-    margin-bottom: 10px;
+.destacados__3 p{
     padding: 3px 3px 3px 3px;
-    background-color: black;
     color: rgb(16, 199, 190);
     font-weight: 700;
+    bottom: 0;
+    position: static;
 }
-.ofertas__3 div a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
-} 
 /*-----------------footer------------------*/
 footer{
     background-color: rgb(0, 0, 0);
@@ -342,7 +268,6 @@ footer img{
     height: 50px;
     width: 50px;
 }
-
 .redes{
     display: flex;
     justify-content: space-evenly;
@@ -364,8 +289,8 @@ iframe{
 }
 .sony{
     background-color: rgb(0, 0, 0);
-    height: 800px;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background-image: url(../img/consolafondo2.jpg);
     background-position: center;
     background-size: cover; 
@@ -375,53 +300,13 @@ iframe{
     width: 250px;
     border-radius: 10px;
 }
-.sony h2{
-    background-color: black;
+.sony h3{
     text-align: center;
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
-    color: rgb(15, 192, 38);
-}
-.consolas{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    margin-top: 15px;
-    flex-wrap: wrap;
-}
-.consolas div{
-    width: 250px;
-    height: 315px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.consolas div p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
+    color: rgb(15, 192, 38); 
     background-color: black;
-    color: rgb(15, 192, 38);
-    font-weight: 700;
-}
-.consolas div a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
-}
-.consolas h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
 }
 
 /*al tener varios flexbox, tuve que dimensionar este para que el resto entre en la section*/
@@ -438,7 +323,7 @@ iframe{
 }
 .juegosps div{
     width: 250px;
-    height: 315px;
+    height: 100%;
     margin-bottom: 10px;
     text-align: center;
     overflow: hidden;
@@ -456,23 +341,27 @@ iframe{
     padding: 3px 3px 3px 3px;
     background-color: black;
     color: rgb(15, 192, 38);
-    font-weight: 700;
+    font-weight: 700; 
 }
 .juegosps img{
     height: 250px;
-    width: 250px;
+    width: 100%;
+    transition: 1.1s;
+}
+.juegosps img:hover{
+    transform: scale(0.9);
 }
 /*--------------segunda section, mostrando otra marca y juegos de la misma----------------*/
 .xbox{
     background-color: aqua;
-    height: 800px;
+    height: 100%;
     width: 100%;
     background-image: url(../img/fondoxbox2.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover
 }
-.xbox h2{
+.xbox h3{
     background-color: black;
     text-align: center;
     font-size: 30px;
@@ -506,18 +395,24 @@ iframe{
 }
 .consolas-2 div{
     width: 250px;
-    height: 315px;
+    height: 100%;
     margin-bottom: 10px;
     text-align: center;
     background-color: #f0f3f5bd;
     overflow: hidden;
     border-radius: 10px;
+    transition: 2s;
+    border: 1px solid rgb(24, 206, 197);
+}
+.consolas-2 div:hover{
+    transform: scale(1.1);
+    background-color: black;
 }
 .consolas-2 div p{
     margin-bottom: 10px;
     padding: 3px 3px 3px 3px;
     background-color: black;
-    color: rgb(15, 192, 38);
+    color: rgb(16, 199, 190);
     font-weight: 700;
 }
 .consolas-2 div a{
@@ -528,13 +423,22 @@ iframe{
     padding: 5px 5px 5px 5px;
     align-items: baseline;
     border: 1px solid black;
+    transition: 1.5s;
+}
+.consolas-2 div a:hover{
+    color: rgb(247, 239, 239);
+    border: 1px solid rgb(255, 255, 255);
 }
 /*segundo flexbox de la misma section, mostrando juegos*/
 .juegos-2 img{
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    transition: 1.1s;
     }
+.juegos-2 img:hover{
+    transform: scale(0.9);
+}
 .juegos-2{
     display: flex;
     align-items: flex-end;
@@ -550,10 +454,8 @@ iframe{
 .juegos-2 p{
     font-size: 20px;
     color: rgb(221, 97, 97);
-    
 }
 .juegos-2 a{
-    text-decoration: none;
     font-weight: 700;
     color: rgb(255, 76, 31);
     padding: 10px 5px 5px 5px;
@@ -564,217 +466,71 @@ iframe{
 }
 .pc{
     background-color: rgb(0, 0, 0);
-    height: 800px;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background-image: url(../img/pcfondo2.jpg);
     background-position: center;
     background-size: cover;
-}
-.pc h2{
-    background-color: black;
-    text-align: center;
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 20px;
-    color: rgb(15, 192, 38);
 }
 .pc img{
     height: 200px;
     width: 250px;
 }
-.ofertas-pc{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    margin-top: 15px;
-    flex-wrap: wrap;
-}
-.ofertas-pc div{
-    width: 250px;
-    height: 310px;
-    margin-bottom: 10px;
+.pc h3{
     text-align: center;
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.ofertas-pc h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
-}
-.ofertas-pc  a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;  
-}
-.ofertas-pc p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: rgb(15, 192, 38); 
     background-color: black;
-    color: rgb(15, 192, 38);
-    font-weight: 700;
-}
-.ofertas-pc-2{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    margin-top: 15px; 
-    flex-wrap: wrap;
-}
-.ofertas-pc-2 div{
-    width: 250px;
-    height: 310px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.ofertas-pc-2 h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
-}
-.ofertas-pc-2 p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
-    background-color: black;
-    color: rgb(15, 192, 38);
-    font-weight: 700;
-}
-
-.ofertas-pc-2 a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
 }
 /*segunda section de la pag PC, mostrando otro tipo de productos*/
 .notebook{
     background-color: rgb(0, 0, 0);
-    height: 900px;
+    height: 100%;
     width: 100%;
     background-image: url(../img/note4.jpg);
     background-position: center;
     background-size: cover;
 }
-.notebook h2{
-    background-color: black;
-    text-align: center;
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 20px;
-    color: rgb(15, 192, 38);
-}
-
-.notebook-2 {
-    height: fit-content;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 15px;
-    flex-wrap: wrap;
-}
-.notebook-2 div{
-    width: 250px;
-    height: 310px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.notebook-2 div p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
-    background-color: black;
-    color: rgb(15, 192, 38);
-    font-weight: 700;
-}
-.notebook-2 div a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
-}
-.notebook-2 h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
-    width: 100%;
-}
-.notebook-2 img{
+.notebook img{
     height: 200px;
     width: 250px;
+}
+.notebook h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: rgb(15, 192, 38); 
+    background-color: black;
 }
 /*----------retro-------------*/
 .retro{
     background-color: black;
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: 100%;
     background-image: url(../img/retrofondo2.jpg);
     background-position: center;
     background-size: cover;
 }
-.retro h4{
-    background-color: black;
+.retro h3{
     text-align: center;
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
-    color: rgb(15, 192, 38);
+    color: rgb(15, 192, 38); 
+    background-color: black;
 }
-.consolas-retro{    
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 40px;
-    margin-top: 15px; 
-    flex-wrap: wrap;
-}
-.consolas-retro div{
-    width: 250px;
-    height: 330px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(24, 206, 197);
-    text-align: center;
-    background-color: #f0f3f5bd;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.consolas-retro h3{
-    background-color: rgb(7, 7, 7);
-    text-align: center;
-    font-size: 20px;
-    color: rgb(255, 253, 253);
+.retro img{
+    height: 200px;
     width: 100%;
 }
+
 /*se añade un form sacado de bootstrap y por acá se modifica un poco para que se acople a la page sin desencajar con sus colores por defecto*/
 .form{
     width: 500px;
+    background-color: black;
 }
 .form h3{
     color: rgb(24, 206, 197);
@@ -791,28 +547,8 @@ iframe{
 .form-check-label{
     color: rgb(24, 206, 197);
 }
-.consolas-retro div a{
-    text-decoration: none;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(3, 3, 3);
-    padding: 5px 5px 5px 5px;
-    align-items: baseline;
-    border: 1px solid black;
-}
-.consolas-retro div p{
-    margin-bottom: 10px;
-    padding: 3px 3px 3px 3px;
-    background-color: black;
-    color: rgb(16, 199, 190);
-    font-weight: 700;
-}
-.consolas-retro img{
-    height: 200px;
-    width: 250px;
-}
+
 /*-------------hardware-----------*/
-/*dentro de la page HARDWARE, se incluirá un mini-trabajito con grids, mostrando productos de una forma algo disitnta, a modo de práctica y para practicar como adaptar un GRID a responsive, ya que dudo que la función GRID sea incluida en la fase final del layout*/
 .hardware{
     background-color: black;
     width: 100%;
@@ -822,11 +558,19 @@ iframe{
     background-size: cover;
 }
 .hardware h2{
-    background-color: rgb(7, 7, 7);
+    background-color: black;
     text-align: center;
-    font-size: 20px;
-    color: rgb(221, 97, 97);
-    width: 100%;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    color: rgb(15, 192, 38);
+}
+.hardware p{
+    padding: 3px 3px 3px 3px;
+    color: rgb(16, 199, 77);
+    font-weight: 700;
+    bottom: 0;
+    position: static;
 }
 .cards-hardware{
     width: 70%;
@@ -869,11 +613,7 @@ iframe{
     align-items: center;
     display: block;
     position: static;
-    bottom: 0px;
-    right: 0px;
-    margin-top: 5px;
     }
-
 }
 @media (max-width: 777px) {
     .grid-juegos{
@@ -883,12 +623,14 @@ iframe{
         grid-auto-rows: 300px;
         gap: 10px;
     }
-    
 }
 @media (max-width:751px) {
     /*se cambian las dimensiones del título y del menu dentro del header c:*/
+    header{
+        position: static;
+    }
     header h1{
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
         margin: 0 10px 0 0;
         padding-bottom: 10px; 
@@ -948,28 +690,6 @@ iframe{
         height: 150px;
         width: 100%;
     }
-    .ofertas__2 h3{
-        text-align: center;
-        font-size: 15px;
-        width: 100%;
-    }
-    .ofertas__2 div{
-        width: 200px;
-        height:100%;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    .ofertas__2 div p{
-        margin-bottom: 10px;
-        padding: 3px 3px 3px 3px;
-        font-weight: 700;
-    }
-    .ofertas__2 div a{
-        font-size: 12px;
-        font-weight: 900;
-        padding: 5px 5px 5px 5px;
-        align-items: baseline;
-    }
     /*ya casi terminando con las sections, se mantienen las mismas dimensiones para las cards ya ajustadas arriba*/
     .destacados__3 h3{
         text-align: center;
@@ -980,36 +700,11 @@ iframe{
         height: 150px;
         width: 100%;
     }
-    .ofertas__3 h3{
-        text-align: center;
-        font-size: 15px;
-        width: 100%;
-    }
-    .ofertas__3 div{
-        width: 200px;
-        height: 100%;
-    }
-    .ofertas__3 div p{
-        margin-bottom: 10px;
-        padding: 3px 3px 3px 3px;
-        font-weight: 700;
-    }
-    .ofertas__3 div a{
-        font-size: 12px;
-        font-weight: 900;
-        padding: 5px 5px 5px 5px;
-        align-items: baseline;
-    } 
 } /*primera media querie terminada, los items y la pag se adaptan a una menor resolución pero aún con el mismo display*/
 
 /*segunda parte del responsive, pensado como para dimensiones de una pantalla tablet*/
 /*acá los items ya se empiezan a desplegar de forma diferente, como anteriormente se usó flex-wrap, las cards se adaptan de manera hermosa*/
-@media (max-width:599px) {
-    .destacados__1{
-    height: 800px;
-    }
-    /*se agranda un poco la altura de la primer section para que no se buguee con el poco espacio y las cards queden mezcladas con la section que le sigue*/
-}
+
 @media (max-width:456px){
     .grid-juegos{
         width: 60vw;
@@ -1019,62 +714,8 @@ iframe{
         gap: 10px;
     }
 }
-@media (max-width:399px){g
-    .destacados__1{
-        height: 1000px;
-        }
-    .destacados__2{
-        height: 1000px;
-    }
-    .destacados__3{
-        height: 1000px;
-    }
 /*responsive del index terminado, las dimensiones del header y del footer se van a adaptar del mismo modo al resto de las pags*/
-}
-@media (max-width:749px){
-    /*haciendo el responsive de la page PC, dimensionando a nuevos tamaños las sections para que alcancen a encerrar a sus correspondientes productos: */
-    .pc{
-        height: 1100px;
-    }
-}
-@media(max-width: 499px){
-    .pc{
-        height: 1800px;
-    }
-    /*el background de la page Retro coincidió con esta medida así que para ahorrar código lo ubiqué dentro de la media de la page PC*/
-    /*en la page RETRO voy a ir añadiendo mas cards de productos junto con un layout distinto, aún no lo agregué pero para la futura entrega ya se verá diferente*/
-    .retro{
-        height: 1100px;
-    }
-}
-/*el responsive de la page CONSOLAS a continuación, si bien las medidas del @media son mayores, para orientarme mejor me resultó más cómodo trabajarlos en orden de pages en lugar de ordenar de acuerdo al tamaño del responsive*/
-@media(max-width: 999px){
-    .sony{
-        height: 1100px;
-    }
-    .xbox{
-        height: 1000px;
-        width: 100%;
-    }
-}
-@media(max-width: 749px){
-    .sony{
-        height: 1400px;
-    }
-    .xbox{
-        height: 1400px;
-    }
-}
-@media(max-width: 499px){
-    .sony{
-        height: 2350px;
-    }
-    .xbox{
-        height: 1900px;
-    }
-}
 /*responsive de la última page, HARDWARE*/
-/*para practicar, sumé una grilla de productos con GRID, la fase final del proyecto no creo que lo lleve realmente*/
 @media(max-width:650px){
 .chosen{
     grid-column: span 1;
