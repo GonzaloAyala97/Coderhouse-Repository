@@ -22,13 +22,13 @@ body{
                 text-align: center;
                 margin: 0 10px 0 0;
                 padding-bottom: 10px;
-                color: $color-tittle;}
+                color: nth($colores, 2);}
               p{text-align: center;
                 font-size: 18px;
                 font-family: 'Staatliches', cursive;
                 margin: 0 10px 0 0;
                 padding-bottom: 10px;
-                color: $color-tittle;}
+                color: nth($colores, 2);}
               nav ul{font-size: 15px;
               text-align: right;
               margin: 0 10px 0 0;
@@ -38,7 +38,7 @@ body{
               a{font-size: 15px;
               text-decoration: none;
               font-family: 'Press Start 2P', cursive;
-              color: $color-tittle;}
+              color: nth($colores, 2);}
       }
     }
   }

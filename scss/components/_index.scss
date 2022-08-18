@@ -32,7 +32,7 @@ body{
     font-size: 18px;
     font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
-    color: $color-tittle;
+    color: nth($colores, 1);
     background-color: black;
     }
     p{
@@ -40,20 +40,14 @@ body{
         color: rgb(16, 199, 190);
     }
     .ofertas{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 0px;
-        flex-wrap: wrap;
+        @extend %flex;
+    
         div{
-            width: 250px;
-            height: 100%;
+            @include divis(250px,100%,10px,#f0f3f5bd);
             margin-top: 25px;
             margin-bottom: 10px;
             text-align: center;
-            border-radius: 10px;
             border: 1px solid rgb(24, 206, 197);
-            background-color: #f0f3f5bd;
             overflow: hidden;
             transition: 1.5s; 
                 &:hover{
@@ -75,22 +69,25 @@ body{
             font-weight: 700;
         }
         a{
-            text-decoration: none;
-            font-size: large;
-            font-weight: 900;
-            color: rgb(3, 3, 3);
+            text-decoration: map-get($btn , text-decoration );
+            font-size: map-get($btn , font-size );
+            font-weight: map-get($btn , font-weight );
+            color: map-get($btn , color );
             padding: 5px 5px 5px 5px;
-            align-items: baseline;
-            border: 1px solid black;
-            transition: 1.5s;
+            align-items: map-get($btn , align-items );
+            border: map-get($btn, border );
+            transition: map-get($btn , transition );
             &:hover{
                 color: rgb(247, 239, 239);
                 border: 1px solid rgb(255, 255, 255);
             }
         }
-        }
+    
     }
 }
+}
+
+
 /*section 2 del index, mostrando Consolas*/
 
 .destacados__2{
@@ -109,31 +106,24 @@ body{
         font-size: 18px;
         font-family: 'Press Start 2P', cursive;
         margin-top: 20px;
-        color: $color-tittle;
+        color: nth($colores, 2);
         background-color: black;
     }
     p{
         padding: 3px 3px 3px 3px;
-        color: rgb(16, 199, 190);
+        color: nth($colores, 1);
         font-weight: 700;
         bottom: 0;
         position: static;
     }
     .ofertas{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 0px;
-        flex-wrap: wrap;
+        @extend %flex;
         div{
-            width: 250px;
-            height: 100%;
+            @include divis(250px,100%,10px,#f0f3f5bd);
             margin-top: 25px;
             margin-bottom: 10px;
             text-align: center;
-            border-radius: 10px;
             border: 1px solid rgb(24, 206, 197);
-            background-color: #f0f3f5bd;
             overflow: hidden;
             transition: 1.5s; 
                 &:hover{
@@ -151,25 +141,25 @@ body{
             margin-bottom: 10px;
             padding: 3px 3px 3px 3px;
             background-color: black;
-            color: rgb(16, 199, 190);
+            color: nth($colores, 1);
             font-weight: 700;
         }
         a{
-            text-decoration: none;
-            font-size: large;
-            font-weight: 900;
-            color: rgb(3, 3, 3);
+            text-decoration: map-get($btn , text-decoration );
+            font-size: map-get($btn , font-size );
+            font-weight: map-get($btn , font-weight );
+            color: map-get($btn , color );
             padding: 5px 5px 5px 5px;
-            align-items: baseline;
-            border: 1px solid black;
-            transition: 1.5s;
+            align-items: map-get($btn , align-items );
+            border: map-get($btn, border );
+            transition: map-get($btn , transition );
             &:hover{
                 color: rgb(247, 239, 239);
                 border: 1px solid rgb(255, 255, 255);
             }
         }
-        }
     }
+}
 }
 /*section 3 con una galeria en grids*/ 
 .games{
@@ -190,7 +180,7 @@ body{
         }
     }
     p{
-    color: aqua;
+        color: nth($colores, 1);
     position: static;
     bottom: 0%;
     }
@@ -199,7 +189,7 @@ body{
         font-size: 18px;
         font-family: 'Press Start 2P', cursive;
         margin-top: 20px;
-        color: $color-tittle;
+        color: nth($colores, 2);
     }
     .grid-juegos{
         width: 60vw;
@@ -223,7 +213,7 @@ body{
     }
     p{
         padding: 3px 3px 3px 3px;
-        color: rgb(16, 199, 190);
+        color: nth($colores, 1);
         font-weight: 700;
         bottom: 0;
         position: static;
@@ -233,26 +223,19 @@ body{
         font-size: 18px;
         font-family: 'Press Start 2P', cursive;
         margin-top: 20px;
-        color: $color-tittle;
+        color: nth($colores, 2);
         background-color: black;
     }
     .ofertas{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 0px;
-        flex-wrap: wrap;
-        div{
-            width: 250px;
-            height: 100%;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            text-align: center;
-            border-radius: 10px;
-            border: 1px solid rgb(24, 206, 197);
-            background-color: #f0f3f5bd;
-            overflow: hidden;
-            transition: 1.5s; 
+      @extend %flex;
+      div{
+        @include divis(250px,100%,10px,#f0f3f5bd);
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-align: center;
+        border: 1px solid rgb(24, 206, 197);
+        overflow: hidden;
+        transition: 1.5s; 
                 &:hover{
                     transform: scale(1.1);
                     background-color: black;
@@ -272,14 +255,14 @@ body{
             font-weight: 700;
         }
         a{
-            text-decoration: none;
-            font-size: large;
-            font-weight: 900;
-            color: rgb(3, 3, 3);
+            text-decoration: map-get($btn , text-decoration );
+            font-size: map-get($btn , font-size );
+            font-weight: map-get($btn , font-weight );
+            color: map-get($btn , color );
             padding: 5px 5px 5px 5px;
-            align-items: baseline;
-            border: 1px solid black;
-            transition: 1.5s;
+            align-items: map-get($btn , align-items );
+            border: map-get($btn, border );
+            transition: map-get($btn , transition );
             &:hover{
                 color: rgb(247, 239, 239);
                 border: 1px solid rgb(255, 255, 255);

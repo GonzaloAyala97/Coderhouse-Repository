@@ -1,1 +1,27 @@
-$color-tittle:rgb(15, 192, 38);
+$colores:
+rgb(24, 206, 197),
+rgb(15, 192, 38);
+
+$btn:(
+    text-decoration: none,
+    font-size: large,
+    font-weight: 900,
+    color: rgb(3, 3, 3),
+    align-items: baseline,
+    border: 1px solid black,
+    transition: 1.5s,
+);
+/*los extend se agrupan solitos en el style.css arriba de todo, hermoso*/
+%flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    flex-wrap: wrap;
+}
+@mixin divis ($width, $height, $border, $backgroundcolor,){
+    width: $width;
+    height: $height;
+    border: $border;
+    background-color: $backgroundcolor;
+}
