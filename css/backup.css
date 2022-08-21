@@ -283,10 +283,6 @@ iframe{
     border: 5px solid green;
   }
 /*-------------CONSOLAS----------*/
-  
-.back{
-    background-color: rgb(0, 0, 0);
-}
 .sony{
     background-color: rgb(0, 0, 0);
     height: 100%;
@@ -380,12 +376,7 @@ iframe{
     margin-top: 150px;
     flex-wrap: wrap;
 }
-.consolas-2{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin-bottom: 40px;
-}
+
 .consolas-2 h2{
     background-color: rgb(7, 7, 7);
     text-align: center;
@@ -461,9 +452,6 @@ iframe{
     padding: 10px 5px 5px 5px;
 }
 /*-------PC--------*/
-.hero2{
-    background-color: black;
-}
 .pc{
     background-color: rgb(0, 0, 0);
     height: 100%;

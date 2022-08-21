@@ -50,6 +50,7 @@ body{
             border: 1px solid rgb(24, 206, 197);
             overflow: hidden;
             transition: 1.5s; 
+            border-radius: 10px;
                 &:hover{
                     transform: scale(1.1);
                     background-color: black;
@@ -86,10 +87,7 @@ body{
     }
 }
 }
-
-
 /*section 2 del index, mostrando Consolas*/
-
 .destacados__2{
     background-color: black;
     width: 100%;
@@ -126,6 +124,7 @@ body{
             border: 1px solid rgb(24, 206, 197);
             overflow: hidden;
             transition: 1.5s; 
+            border-radius: 10px;
                 &:hover{
                     transform: scale(1.1);
                     background-color: black;
@@ -180,7 +179,7 @@ body{
         }
     }
     p{
-        color: nth($colores, 1);
+    color: nth($colores, 1);
     position: static;
     bottom: 0%;
     }
@@ -236,6 +235,7 @@ body{
         border: 1px solid rgb(24, 206, 197);
         overflow: hidden;
         transition: 1.5s; 
+        border-radius: 10px;
                 &:hover{
                     transform: scale(1.1);
                     background-color: black;
