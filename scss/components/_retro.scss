@@ -78,15 +78,15 @@
         background-color: rgb(7, 7, 7);
     }
     .form-label{
-        color: rgb(24, 206, 197);
+        color: nth($colores, 1);
     }
     .form-text{
-        color: rgb(24, 206, 197);
+        color: nth($colores, 1);
     }
     .form-check-label{
-        color: rgb(24, 206, 197);
+        color: nth($colores, 1);
     }
     h3{
-        color: rgb(24, 206, 197);
+        color: nth($colores, 1);
     }
 }

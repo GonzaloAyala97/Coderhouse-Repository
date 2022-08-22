@@ -12,6 +12,16 @@
             h3{font-size: 13px;}
              .grid-juegos{grid-template-columns: repeat(2,1fr);}
        }
+       .hardware{
+        h2{}
+        p{}
+        .cards-hardware{
+            grid-template-columns: repeat(1,1fr);
+            .chosen{
+                grid-column: span 1;
+            }
+        }
+       }
 
     /*se cambian las dimensiones del título y del menu dentro del header c:*/
     body{
