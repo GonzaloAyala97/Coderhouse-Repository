@@ -32,7 +32,7 @@ body{
     font-size: 18px;
     font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
-    color: nth($colores, 1);
+    color: nth($colores, 2);
     background-color: black;
     }
     p{
@@ -41,7 +41,6 @@ body{
     }
     .ofertas{
         @extend %flex;
-    
         div{
             @include divis(250px,100%,10px,#f0f3f5bd);
             margin-top: 25px;
@@ -78,6 +77,7 @@ body{
             align-items: map-get($btn , align-items );
             border: map-get($btn, border );
             transition: map-get($btn , transition );
+            margin-bottom: map-get($btn , margin-bottom );
             &:hover{
                 color: rgb(247, 239, 239);
                 border: 1px solid rgb(255, 255, 255);
