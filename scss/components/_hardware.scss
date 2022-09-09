@@ -14,11 +14,11 @@
         background-color: black; 
     }
     p{
-        padding: 3px 3px 3px 3px;
         color: rgb(255, 253, 253);
         font-weight: 700;
         bottom: 0;
         position: static;
+        text-align: center;
     }
     .cards-hardware{
         width: 70%;
@@ -42,9 +42,10 @@
                 border-radius: 10px; 
             }
             h3{
+                font-size: 20px;
                 position: absolute;
                 text-align: center;
-                color: rgb(255, 253, 253);
+                color: rgb(25, 235, 235);
                 background-color: rgb(0, 0, 0);
                 width: 100%;
                 border-top-left-radius: 10px;
