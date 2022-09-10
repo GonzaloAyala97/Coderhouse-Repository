@@ -110,6 +110,7 @@ body {
     color: #17e228;
     background-color: black; }
   .destacados__1 p {
+    text-align: center;
     position: static;
     color: #10c7be; }
   .destacados__1 .ofertas div {
@@ -172,6 +173,7 @@ body {
     color: #17e228;
     background-color: black; }
   .destacados__2 p {
+    text-align: center;
     padding: 3px 3px 3px 3px;
     color: #18cec5;
     font-weight: 700;
@@ -236,7 +238,8 @@ body {
   .games p {
     color: #18cec5;
     position: static;
-    bottom: 0%; }
+    bottom: 0%;
+    text-align: center; }
   .games h3 {
     text-align: center;
     font-size: 18px;
@@ -266,7 +269,8 @@ body {
     color: #18cec5;
     font-weight: 700;
     bottom: 0;
-    position: static; }
+    position: static;
+    text-align: center; }
   .destacados__3 h4 {
     text-align: center;
     font-size: 18px;
