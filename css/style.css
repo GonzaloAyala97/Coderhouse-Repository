@@ -247,6 +247,7 @@ body {
     margin-top: 20px;
     color: #17e228; }
   .games .grid-juegos {
+    margin-left: 215px;
     width: 60vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -778,6 +779,7 @@ body {
   .games h3 {
     font-size: 13px; }
   .games .grid-juegos {
+    margin-left: 0px;
     grid-template-columns: repeat(2, 1fr); }
   .hardware .cards-hardware {
     grid-template-columns: repeat(1, 1fr); }

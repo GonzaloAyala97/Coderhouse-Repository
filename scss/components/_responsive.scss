@@ -11,7 +11,9 @@
 @media (max-width: 777px) {
        .games{
             h3{font-size: 13px;}
-             .grid-juegos{grid-template-columns: repeat(2,1fr);}
+             .grid-juegos{ 
+                margin-left: 0px;
+                grid-template-columns: repeat(2,1fr);}
        }
        .hardware{
         h2{}

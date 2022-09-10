@@ -194,6 +194,7 @@ body{
         color: nth($colores, 2);
     }
     .grid-juegos{
+        margin-left: 215px;
         width: 60vw;
         display: grid;
         grid-template-columns: repeat(3,1fr);
